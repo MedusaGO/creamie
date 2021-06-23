@@ -118,8 +118,7 @@ func main() {
 		fmt.Println("\n[+] Dropping at @:", time.Unix(dropTime_UNIX, 0), "\n")
 
 		for time.Now().Unix() <= snipe_time {
-
-			//time.Sleep(1 * time.Millisecond)
+			time.Sleep(1 * time.Millisecond)
 		}
 
 		Gold.Println("•:•.•:•.•:•:☾۞☽•:•.•:•.•:•:\n")
@@ -177,11 +176,7 @@ func main() {
 
 		go socketSending(bearer, name, dropDelay)
 
-		time.Sleep(1 * time.Second)
-
 		Gold.Println("\n•:•.•:•.•:•:☾۞☽•:•.•:•.•:•:")
-
-		time.Sleep(1 * time.Second)
 
 	} else if options == 3 {
 
